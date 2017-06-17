@@ -1,0 +1,64 @@
+.ContentView
+  figure.highlight , pre >code
+      display: block
+      width: 92%
+      margin: auto
+      overflow-x: auto
+      padding: 10px
+      font-size: 85%
+      // line-height: inherit
+      // word-wrap: normal
+      // border: 0
+
+  figure.highlight , pre >code
+      font-family: monospace
+      background-color: #f7f7f7
+      border-radius: 10px
+      .gutter
+          text-align: right
+          // min-width: 20px
+          color: #afafaf
+          padding: 0 8px 0 0
+          border-right: 3px solid #6ce26c
+      .code
+          padding-left:  16px
+          letter-spacing: 0.025em
+      pre
+          margin: auto
+          overflow-x: auto
+  code
+    padding: 0
+    padding-top: 0.2em
+    padding-bottom: 0.2em
+    margin: 0
+    font-size: 85%
+    background-color: #f7f7f7
+    border-radius: 3px
+    &::before, &::after
+      letter-spacing: -0.2em
+      content: "\A0"
+
+  blockquote
+    margin: 0
+    padding: 0 1em
+    color: #777
+    border-left: 0.25em solid #ddd
+
+  .danger
+    padding: 15px
+    margin-bottom: 20px
+    border: 1px solid transparent
+    border-radius: 4px
+    p
+      margin: 0
+  .danger
+    color: #a94442
+    background-color: #f2dede
+    border-color: #ebccd1
+
+  a
+    color: #337ab7
+    text-decoration: none
+    &:hover
+      color: #23527c
+      text-decoration: underline
