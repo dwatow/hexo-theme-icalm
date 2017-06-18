@@ -1,4 +1,31 @@
 .ContentView
+  // position: relative
+  #toc
+    background-color: rgba(255, 255, 255, 0.7)
+    opacity: 0
+    transition: opacity .3s
+    &:hover
+      opacity: 1
+    .toc-level-4, .toc-level-5, .toc-level-6
+      display: none
+    @media screen and (min-width: 450px)
+      position: fixed
+      right: 10px
+      top: 10px
+      max-height: calc(90vh - 100px)
+      overflow: auto
+      padding: 0px 10px
+      border-radius: 7px
+      margin-bottom: 0
+      ol
+        padding-left: 10px
+      li
+        list-style: none
+      a
+        line-height: 1rem
+        font-size: 13px
+        color: #767676
+
   figure.highlight , pre >code
       display: block
       width: 92%
@@ -6,9 +33,6 @@
       overflow-x: auto
       padding: 10px
       font-size: 85%
-      // line-height: inherit
-      // word-wrap: normal
-      // border: 0
 
   figure.highlight , pre >code
       font-family: monospace
